@@ -1,0 +1,62 @@
+.headerContainer {
+  height: 5rem;
+  border-bottom: 1px solid var(--gray-800);
+}
+
+.headerContent {
+  max-width: 1120px;
+  height: 5rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.headerContent nav {
+  margin-left: 5rem;
+  height: 5rem;
+}
+
+.headerContent nav a {
+  display: inline-block;
+  position: relative;
+  padding: 0 0.5rem;
+  height: 5rem;
+  line-height: 5rem;
+  color: var(--gray-300);
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.headerContent nav a + a {
+  margin-left: 2rem;
+}
+
+.headerContent nav a:hover {
+  color: var(--white);
+}
+
+.headerContent nav a.active {
+  font-weight: bold;
+  color: var(--white);
+}
+
+.headerContent nav a.active::after {
+  content: '';
+  height: 3px;
+  border-radius: 3px 3px 0 0;
+  width: 100%;
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  background: var(--yellow-500);
+}
+
+.headerContent button {
+  margin-left: auto;
+}
+/*# sourceMappingURL=styles.module.css.map */
